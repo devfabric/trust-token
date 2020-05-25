@@ -1,4 +1,4 @@
-module code.uni-ledger.com/switch/secure-token
+module github.com/devfabric/trust-token
 
 go 1.13
 

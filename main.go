@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"code.uni-ledger.com/switch/switch-token/token"
+	"github.com/devfabric/trust-token/token"
 )
 
 func GetWorkDirectory() (string, error) {
