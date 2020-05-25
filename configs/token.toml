@@ -1,0 +1,10 @@
+type = "JWT-HS256"
+expires = 86400
+
+[JWT_HS]
+  secret = "ABC$1&2oiew3975*4j6k80"
+
+[JWT_ES]
+  isverifier = false
+  private = "configs/ec256-private.pem"
+  public = "configs/ec256-public.pem"

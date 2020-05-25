@@ -1,0 +1,24 @@
+type = "JWT-HS512"  
+
+采用HMAC算法type选项有:
+JWT_HS256 表示采用hmac-hs256   默认
+JWT_HS384 表示采用hmac-hs384
+JWT_HS512 表示采用hmac-hs512 
+
+采用ECDSA算法type选项有:
+JWT_ES256 表示采用ecdsa-es256
+JWT_ES384 表示采用ecdsa-es384
+JWT_ES512 表示采用ecdsa-es512
+
+
+表示采用hmac-hs256加密算法加密token  
+        可选还有JWT-ES256:表示ecdsa-es256椭圆曲线私钥加密token,公钥验证
+expires = 86400  表示token从签发到过期时间,默认1天
+
+[hmac]  表示hmac-hs256加密秘钥
+  secret = "ABC$1&2oiew3975*4j6k80"  
+
+[ecdsa]
+  isverifier = false    false表示公私钥文件必须都提供,true仅提供公钥文件,使用公钥验证token;
+  private = "configs/ec384-private.pem"  ecdsa384私钥文件
+  public = "configs/ec384-public.pem" ecdsa384公钥文件
